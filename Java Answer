@@ -1,32 +1,29 @@
 public class Main {
+
     public static void main(String[] args) {
 
         int n = 5;
 
-        // Upper half
+        // Upper part
         for (int i = 1; i <= n; i++) {
 
-            // Left spaces
             for (int j = i; j < n; j++) {
                 System.out.print(" ");
             }
 
-            // Left star
             System.out.print("*");
 
-            // Middle hollow space
             if (i > 1) {
-                for (int j = 1; j <= 2*i - 3; j++) {
+                for (int j = 1; j <= 2 * i - 3; j++) {
                     System.out.print(" ");
                 }
-                // Right star
                 System.out.print("*");
             }
 
             System.out.println();
         }
 
-        // Lower half
+        // Lower part
         for (int i = n - 1; i >= 1; i--) {
 
             for (int j = n; j > i; j--) {
@@ -36,7 +33,7 @@ public class Main {
             System.out.print("*");
 
             if (i > 1) {
-                for (int j = 1; j <= 2*i - 3; j++) {
+                for (int j = 1; j <= 2 * i - 3; j++) {
                     System.out.print(" ");
                 }
                 System.out.print("*");
